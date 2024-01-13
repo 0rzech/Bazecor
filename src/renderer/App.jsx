@@ -279,6 +279,7 @@ class App extends React.Component {
       da: "danish",
       no: "norwegian",
       is: "icelandic",
+      pl: "polish",
     };
     // console.log("languageTEST", lang, translator[lang.split("-")[0]], translator["hh"]);
 

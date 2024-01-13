@@ -26,6 +26,7 @@ import finnishF from "@Assets/flags/finland.png";
 import icelandicF from "@Assets/flags/iceland.png";
 import norwegianF from "@Assets/flags/norway.png";
 import swissF from "@Assets/flags/switzerland.png";
+import polishF from "@Assets/flags/poland.png";
 import eurkeyF from "@Assets/flags/eurkey.png";
 import { IconWrench, IconSun, IconMoon, IconScreen } from "../../component/Icon";
 import { ToggleButtons } from "../../component/ToggleButtons";
@@ -91,6 +92,7 @@ export default class GeneralSettings extends Component {
       japaneseF,
       koreanF,
       swissF,
+      polishF,
       eurkeyF,
     ];
     let language = [
@@ -109,6 +111,7 @@ export default class GeneralSettings extends Component {
       "japanese",
       "korean",
       "swissGerman",
+      "polishProg",
       "eurkey",
     ];
     const languageNames = [
@@ -127,6 +130,7 @@ export default class GeneralSettings extends Component {
       "Japanese",
       "Korean",
       "Swiss (German)",
+      "Polish (programmer's)",
       "EurKEY (1.3)",
     ];
     language = language.map((item, index) => ({

@@ -79,6 +79,9 @@ import korean, { koreanModifiedTables } from "./languages/korean/korean";
 // Swiss German - is an Array of objects of values that have to be modified
 import swissGerman, { swissGermanModifiedTables } from "./languages/swissGerman/swissGerman";
 
+// Polish programmer's - is an Array of objects of values that have to be modified
+import polishProg, { polishProgModifiedTables } from "./languages/polish/polishProg";
+
 // EurKEY - is an Array of objects of values that have to be modified
 import eurkey, { eurkeyModifiedTables } from "./languages/eurkey/eurkey";
 
@@ -140,6 +143,7 @@ const supportModifiedTables = {
   japanese: japaneseModifiedTables,
   korean: koreanModifiedTables,
   swissGerman: swissGermanModifiedTables,
+  polishProg: polishProgModifiedTables,
   eurkey: eurkeyModifiedTables,
 };
 
@@ -173,6 +177,7 @@ const languagesDB = {
   japanese,
   korean,
   swissGerman,
+  polishProg,
   eurkey,
 };
 // Create cache for language layout

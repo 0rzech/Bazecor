@@ -60,6 +60,8 @@ import IC from "@Renderer/modules/KeyPickerKeyboard/IC.json";
 import JP from "@Renderer/modules/KeyPickerKeyboard/JP.json";
 import KR from "@Renderer/modules/KeyPickerKeyboard/KR.json";
 import SWGR from "@Renderer/modules/KeyPickerKeyboard/SWGR.json";
+import PLPROGi from "@Renderer/modules/KeyPickerKeyboard/PL-PROG-i.json";
+import PLPROGa from "@Renderer/modules/KeyPickerKeyboard/PL-PROG-a.json";
 import EU from "@Renderer/modules/KeyPickerKeyboard/EU.json";
 // import SelectSuperKeys from "../../component/Select/SelectSuperKey";
 
@@ -325,15 +327,17 @@ class KeyPickerReduced extends Component {
       icelandic: IC,
       japanese: JP,
       swissGerman: SWGR,
+      polishProg: PLPROGi,
     };
     const lansi = {
       english: ENa,
       korean: KR,
+      polishProg: PLPROGa,
       eurkey: EU,
     };
     let Lang = ENa;
 
-    if (selectedlanguage === "english") {
+    if (["english", "polishProg"].includes(selectedlanguage)) {
       if (kbtype === "ansi") {
         if (lansi[selectedlanguage] !== undefined) {
           Lang = lansi[selectedlanguage];
